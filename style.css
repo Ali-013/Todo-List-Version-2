@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(135deg, #153677, #4e085f);
+}
+.todoApp{
+    width: 100%;
+    max-width: 740px;
+    background: white;
+    position:absolute;
+    margin: 100px 35% 30px; 
+    padding: 40px 30px 70px;
+    border-radius: 50px;
+    box-shadow: black;
+}
+.todoApp h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+.todoApp h2 img{
+    width: 60px;
+    margin-right: 10px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    max-width: 540px;
+    margin-left: 10%;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #057ebf;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 16px;
+    padding: 12px 8px 12px 65px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: black;
+    top: 15px;
+    left: 10px;
+}
+ul li.checked{
+    color: gray;
+    text-decoration: line-through;
+
+}
+ul li.checked::before{
+    background-color: green;
+}
+ul li .cross{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    color: rgb(231, 96, 96);
+    text-align: center;
+    border-radius: 50%;
+}
+ul li .done{
+    position: absolute;
+    right: 10%;
+    top: 7px;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    line-height: 40px;
+    color: rgb(50, 200, 33);
+    text-align: center;
+    border-radius: 50%;
+}
+ul li .cross:hover{
+    background-color: rgb(225, 26, 26);
+    color: white;
+}
+ul li .done:hover{
+    background-color: rgb(50, 200, 33);
+    color: white;
+}
+#forCount{
+    max-width: 200px;
+    background: transparent;
+    border-radius: 25%;
+    
+}
+#Counter{
+    display: flex;
+    max-height: 50px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    background:linear-gradient(135deg, #204182, #ad4dc5);
+    color: white;
+    max-width: 25%;
+    padding-left: 2%;
+    border-radius: 40px;
+    margin-left: 10%;
+}
